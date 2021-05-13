@@ -1,10 +1,7 @@
-*,
-*::after,
-*::before {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    user-select: none;
 }
 
 body {
@@ -21,30 +18,8 @@ body {
     margin: 1rem auto;
 }
 
-.redirect {
-    margin-top: 8vh;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    padding-left: 20px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.801);
-    position: absolute;
-}
-
-.redirect a {
-    text-decoration: none;
-    color: #ffde70;
-}
-
-.hello {
-    display: grid;
-    grid-gap: 1rem;
-    grid-auto-rows: minmax(auto, auto);
-}
-
 .fa {
+    transition: 0.3s;
     color: black;
     font-size: 30px;
     padding: 2px;
@@ -52,8 +27,43 @@ body {
     text-decoration: none;
 }
 
-.fa:hover {
-    opacity: 0.7;
+.redirect {
+    transition: 0.3s;
+    text-decoration: none;
+    color: #ffde70;
+    margin-top: 8vh;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    padding-left: 20px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: rgb(24, 24, 24);
+    position: absolute;
+    cursor: pointer;
+}
+
+.redirect p {
+    color: #ffde70;
+}
+
+.links a {
+    font-size: large;
+}
+
+.links a:hover {
+    color: rgba(0, 0, 0, 0.384);
+}
+
+.redirect:hover {
+    background-color: rgba(0, 0, 0, 0.384);
+}
+
+.hello {
+    padding-top: 5rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(auto, auto);
 }
 
 .image {
@@ -334,6 +344,10 @@ body {
 
 .dog__fr-paw::before {
     background-color: #D7DBD2;
+}
+
+#insta {
+    font-weight: 600;
 }
 
 @keyframes head {
